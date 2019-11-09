@@ -1,4 +1,4 @@
-let coll = document.getElementsByClassName("collapsed");
+let coll = document.getElementsByClassName("main_canvas");
 let i;
 
 for (i = 0; i < coll.length; i++) {
