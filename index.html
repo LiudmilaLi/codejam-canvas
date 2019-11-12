@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
+    <title>Canvas</title>
+</head>
+<body>
+  <div class="wrapper"> 
+    <header>
+      <nav class="navigation">
+        <img src="assets/nav icon.png" alt="navigation">
+      </nav>
+      <h1>CodeJam-Canvas</h1>
+      <img id="menu" src="assets/menu icon.png" alt="menu">
+    </header>
+
+    <div class="main">
+      <div class="main__draw_boxes">
+        <div class="main__tools_box">
+          <ul class="main__tools_box_list">
+            <li><img src="assets/fill.png" alt="fill"> &emsp; Fill bucket</li>
+            <li><img src="assets/chooseColor.png" alt="chooseColor"> &emsp; Choose Color</li>
+            <li><img src="assets/pencil.png" alt="pencil"> &emsp; Pencil</li>
+            <li><img src="assets/transform.png" alt="transform"> &emsp; Transform</li>
+          </ul>
+        </div>
+        <div class="main__palette_box">
+          <ul>
+            <li><img src="assets/orangeCircle.png" alt="currentColor"> &emsp; Current color</li>
+            <li><img src="assets/yellowCircle.png" alt="previousColor"> &emsp; Prev color</li>
+          </ul>
+          <img src="assets/divider.png" alt="divider">
+          <ul>
+            <li><img src="assets/redCircle.png" alt="firstColor"> &emsp; red</li>
+            <li><img src="assets/blueCircle.png" alt="secondColor"> &emsp; blue</li>
+          </ul>
+        </div>
+      </div>  
+      <div class="main__canvas">
+        <div>
+          <canvas id="myCanvas"></canvas>
+          <script src="canvas.js" async></script>
+        </div>
+        <div>
+          <canvas  id="myCanvas1"></canvas>
+        </div>
+        <div>    
+          <canvas id="myCanvas2"></canvas>
+          <script>
+            let canvas2 = document.getElementById('myCanvas2');
+            let ctx2 = canvas2.getContext('2d');
+            canvas2.width = 512;
+            canvas2.height = 512;
+            ctx2.fillStyle = 'red';
+            ctx2.fillRect(0, 0, 512, 512);
+            let img=new Image();
+            img.onload=start;
+            img.src="assets/image.png";
+            function start(){
+              ctx2.drawImage(img, 0, 0, canvas2.width, canvas2.height); }
+          </script>
+        </div> 
+      </div>
+        <div>
+          <div class="main__canvas_radiobuttons">
+            <input type="radio" class="radiobutton"></input>
+            <p>4x4</p>
+          </div>  
+          <div class="main__canvas_radiobuttons">
+              <input type="radio" class="radiobutton"></input>
+              <p>32x32</p>
+          </div>  
+          <div class="main__canvas_radiobuttons">
+              <input type="radio" class="radiobutton"></input>
+              <p>256x256</p>
+          </div>
+        </div>      
+    </div>  
+    <script src="scriptSwitch.js" async></script> 
+    <script src="canvas1.js" await></script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+.wrapper {
+    width: 1440px;
+    height: 900px;
+    margin: 0 auto;
+    display: flex;  
+    flex-direction: column;
+
+}
+
+header {
+  height: 48px;
+  width: initial;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  margin-bottom: 3%;
+  padding-left: 2%;
+}
+
+.navigation {
+  margin-right: 2%;
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+}
+
+#menu {
+  margin-left: 80%;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.main__draw_boxes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-left: -13%;
+}
+
+.main__tools_box {
+  width: 228px;
+  height: 246px;
+  margin-left: 10%;
+  margin-top: 9%;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
+}
+
+.main__tools_box_list {
+  list-style-type: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 50px;
+  color: rgba(0, 0, 0, 0.541327);
+  padding-left: 10%;
+}
+
+.main__palette_box {
+  width: 228px;
+  height: 246px;
+  margin-left: 10%;
+  margin-top: 32.3%;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
+}
+
+.main__palette_box ul {
+  list-style-type: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 40px;
+  color: rgba(0, 0, 0, 0.541327);
+  padding-left: 10%;
+}
+
+.main__canvas {
+  display: block;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+#myCanvas {
+  border: none;
+  height: 512px;
+  width: 512px;
+  image-rendering: pixelated;
+}
+
+#myCanvas1 {
+  border: none;
+  height: 512px;
+  width: 512px;
+  margin: 2% auto;
+  image-rendering: pixelated;
+}
+
+#myCanvas2 {
+  border: none;
+  height: 512px;
+  width: 512px;
+  margin: 2% auto;
+  image-rendering: pixelated;
+}
+
+.main__canvas_radiobuttons {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.radiobutton {
+  width: 25px;
+  height: 25px;
+  border: none;
+  outline: none;    
+}
